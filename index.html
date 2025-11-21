@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coffee Man Game" />
+
+    <meta property="og:title" content="Coffee Man Game" />
+    <meta property="og:description" content="Coffee Man Game" />
+    <meta property="og:image" content="https://herdiansah.com/games/coffee-man/assets/image_preview.png" />
+    <meta property="og:url" content="https://herdiansah.com/games/coffee-man" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="Coffee Man Game" />
+    <meta name="twitter:title" content="Coffee Man Game" />
+    <meta name=" twitter:description" content="Coffee Man Game" />
+    <meta name="twitter:image" content="https://herdiansah.com/games/coffee-man/assets/image_preview.png" />
+    <title>Coffee Man</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <h1>Loading...</h1>
+        <div id="loading-progress">0%</div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="start-screen">
+        <h1>COFFEE MAN</h1>
+        <button id="start-btn">START GAME</button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" style="display: none;">
+        <h1>GAME OVER</h1>
+        <p id="final-score">Score: 0</p>
+        <button id="restart-btn">TRY AGAIN</button>
+    </div>
+
+    <!-- HUD Layer -->
+    <div id="ui-layer">
+        <div id="jump-power-display">Jump Power: 10</div>
+        <div id="score-board">Score: 0</div>
+        <div id="lives-display">Lives: 3</div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>

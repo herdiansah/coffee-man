@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1c40f;
+    width: 100vw;
+    height: 100vh;
+}
+
+canvas {
+    display: block;
+}
+
+#ui-layer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: 24px;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#jump-power-display,
+#score-board,
+#lives-display {
+    text-shadow: 2px 2px 0 #000;
+}
+
+#start-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    pointer-events: auto;
+}
+
+#start-screen h1 {
+    font-size: 80px;
+    color: #f1c40f;
+    text-shadow: 4px 4px 0 #000;
+    margin-bottom: 40px;
+    font-family: 'Bungee Spice', sans-serif;
+    letter-spacing: 5px;
+}
+
+#start-btn {
+    padding: 20px 50px;
+    font-size: 30px;
+    background: #f1c40f;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 5px 0 #b7950b;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+#start-btn:hover {
+    background: #f4d03f;
+}
+
+#start-btn:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 #b7950b;
+}
+
+#game-over-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    pointer-events: auto;
+}
+
+#game-over-screen h1 {
+    font-size: 80px;
+    color: #e74c3c;
+    text-shadow: 4px 4px 0 #000;
+    margin-bottom: 20px;
+    font-family: 'Bungee Spice', sans-serif;
+    letter-spacing: 5px;
+}
+
+#final-score {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+#restart-btn {
+    padding: 20px 50px;
+    font-size: 30px;
+    background: #f1c40f;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 5px 0 #b7950b;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+#restart-btn:hover {
+    background: #f4d03f;
+}
+
+#restart-btn:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 #b7950b;
+}
+
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: #f1c40f;
+}
+
+#preloader h1 {
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+#loading-progress {
+    font-size: 30px;
+    font-weight: bold;
+}
